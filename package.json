@@ -14,8 +14,7 @@
     "fmt": "pnpm biome format --write ./src",
     "test": "VITE_CJS_IGNORE_WARNING=true vitest run",
     "test:watch": "VITE_CJS_IGNORE_WARNING=true vitest watch",
-    "api": "openapi-typescript ./api/schema.json --output ./src/services/api.d.ts",
-    "mock": "json-server --watch ./api/mock.json --port 8000"
+    "api": "openapi-typescript ./api/schema.json --output ./src/services/api.d.ts"
   },
   "dependencies": {
     "@mantine/core": "7.3.2",
@@ -42,7 +41,6 @@
     "@vitejs/plugin-react": "^4.2.1",
     "dotenv": "^16.0.3",
     "jsdom": "^24.0.0",
-    "json-server": "1.0.0-alpha.23",
     "openapi-typescript": "^6.7.5",
     "postcss-preset-mantine": "^1.12.3",
     "typescript": "^5.3.2",

@@ -4,7 +4,7 @@ import { BaseService } from "./baseService"
 class CompanyService extends BaseService {
   /** 企業情報一覧を取得する */
   async getAll(): Promise<Company[]> {
-    const { data } = await this.mock.GET("/companies")
+    const { data } = await this.api.GET("/companies")
     if (!data) return []
 
     return data.map((item) => ({
